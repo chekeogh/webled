@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Colour Picker</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="color-picker.css" />
+		<script src="zepto.min.js"></script>
+		<script src="color-picker.js"></script>
+	</head>
+	<body>
+		<label>Server Address</label> <input id="server" type="text" value="http://192.168.0.22:82"> <input type="button" id="update" value="update">
+		<br>
+		<fieldset class="color-picker">
+			<select class="format" style="display: none;">
+				<option>Hex</option>
+				<option selected>RGB</option>
+				<option >HSL</option>
+			</select>
+			<input class="color" type="text" value="rgb(59, 118, 191)" />
+			<div class="spectrum">
+				<div class="lightness-filter"></div>
+				<div class="pin"></div>
+			</div>
+			<input class="lightness" value="50" type="range" min="0" max="100" />
+		</fieldset>
+
+		<input type="button" value="On" id="onbutton">
+		<input type="button" value="Off" id="offbutton">
+
+
+	</body>
+</html>
